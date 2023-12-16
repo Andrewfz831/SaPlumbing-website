@@ -1,22 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscClose } from "react-icons/vsc";
 import Logo from "../images/SA_Logo_2-removebg-preview.png";
-// import { MdOutlineMailOutline } from "react-icons/md";
-// import { IoCallOutline } from "react-icons/io5";
 
-const Navbar = () => {
-  // const phoneNumber = "+8318403058";
-
+const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768); // Adjust this value as per your breakpoint for mobile screens
+  };
+
+  useEffect(() => {
+    handleResize(); // Set initial state based on screen size
+    window.addEventListener("resize", handleResize); // Listen for window resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up the event listener
+    };
+  }, []);
 
   return (
-    <div className="shadow-md w-full top-0 left-0 z-50">
-      <div className="md:flex items-center justify-between bg-neutral-900 py-6 md:px-10 px-7">
+    <div className="shadow-md w-full border-b-2 border-neutral-700">
+      <div className="md:flex justify-between bg-neutral-900 py-6 md:px-10 px-7">
         <div className="font-bold cursor-pointer">
-          <div className="flex flex-row items-center">
+          <div className="flex flex-col items-center">
             <img src={Logo} alt="" className="h-20" />
             <div className="text-white font-normal text-3xl pl-2">
               SA Plumbing Inc.
@@ -34,9 +44,9 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={` bg-neutral-900 bg-opacity-95 md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? " top-16 " : "top-[-490px]"
-          }`}
+          className={`${
+            !isMobile || open ? "visible-menu" : "hidden"
+          } font-medium bg-neutral-900 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
         >
           <li className="md:ml-8  md:my-0 my-7">
             <RouterLink

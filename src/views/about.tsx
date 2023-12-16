@@ -20,11 +20,11 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex flex-row mt-20">
-        <div className="w-1/2 mt-5 ml-20">
-          <img src={Img} alt="" />
+      <div className="flex flex-col items-center md:items-stretch md:flex-row ">
+        <div className="md:w-1/2 md:mt-5 md:ml-20 ">
+          <img src={Img} alt="" className="h-full w-full" />
         </div>
-        <div className=" w-1/2 mt-5 ml-1 p-10 bg-blue-500 text-white">
+        <div className=" md:w-1/2 mt-5 md:ml-1 p-12 bg-blue-500 text-white">
           <h3 className="pb-5 text-4xl font-semibold">How we started</h3>
           <p className=" text-lg">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
@@ -34,8 +34,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-row">
-        <div className="w-1/2 mt-5 ml-20">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 mt-5 m-10 md:ml-20">
           <h3 className="text-4xl text-gray-700 my-5">Our Mission</h3>
           <p>
             At SA Plumbing, our mission is simple: to deliver top-notch,
@@ -45,25 +45,26 @@ const About = () => {
             concerns promptly and efficiently.
           </p>
         </div>
-        <div className="w-1/2 mt-5 ml-20 mb-20">
+        <div className="md:w-1/2 mt-5 m-10 md:ml-20 ">
           <h3 className="text-4xl text-gray-700 my-5">Our Core Value</h3>
           <WhyChooseUs text="Consider honesty as the key to a business’ trustworthiness and integrity." />
           <WhyChooseUs text="Always do the right thing to solve the customer’s problem." />
           <WhyChooseUs text="Perform all work with the highest level of excellence in mind." />
         </div>
       </div>
-      <div className="flex flex-row  px-20 bg-blue-500 mb-20">
-        <div className="text-white mr-5 py-32">
+
+      <div className="flex flex-col items-center md:items-stretch md:flex-row mb-5">
+        <div className=" md:w-1/2 mt-5 md:mr-1 p-12 bg-blue-500 text-white">
           <h3 className="pb-5 text-4xl font-semibold">
-            We're here to help! Give us a call
+            We're here to help, ive us a call any time!
           </h3>
           <div className="flex flex-row">
             <img src={Phone} alt="" className="w-10" />
             <span className="text-2xl ml-5">(831) 840-3058</span>
           </div>
         </div>
-        <div>
-          <img src={Img2} alt="" />
+        <div className="md:w-1/2 md:mt-5 md:mr-20">
+          <img src={Img2} alt="" className="h-full" />
         </div>
       </div>
       <ContactSection />

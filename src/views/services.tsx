@@ -23,8 +23,8 @@ const ServicesView = () => {
           Our Services
         </h2>
         <p className=" md:w-2/5">
-          We offer a wide range of plumbing services, repairs, and replacements
-          for residential and commercial setups.
+          We offer a wide range of plumbing services, repairs, replacements and
+          remodels for residential and commercial setups.
         </p>
       </div>
       <h2

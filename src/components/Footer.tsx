@@ -12,9 +12,6 @@ const Footer: React.FC = () => {
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img src={Logo} className=" w-32" alt="SA Plumbing Logo" />
-            <span className="self-center text-4xl whitespace-nowrap text-white">
-              SA Plumbing
-            </span>
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-white">
             <li>
