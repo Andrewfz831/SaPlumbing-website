@@ -12,13 +12,22 @@ import Trenchless from "../assets/trenchless.svg";
 import NewConstruction from "../assets/newConstruction.svg";
 import ContactSection from "../components/EmailForm";
 import Footer from "../components/Footer";
+import Pipe from "../assets/pipe.svg";
 
 const ServicesView = () => {
   return (
     <>
       <Navbar />
 
-      <div className=" py-36 flex flex-col justify-center px-28 text-white bg-neutral-900">
+      <div
+        className=" py-36 flex flex-col justify-center px-28 text-white bg-neutral-900"
+        style={{
+          backgroundImage: `url(${Pipe})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
           Our Services
         </h2>

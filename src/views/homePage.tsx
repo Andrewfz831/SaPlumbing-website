@@ -13,12 +13,12 @@ import ScBg from "../images/AdobeStock_227980864_Preview.jpeg";
 import NumbersSpeak from "../components/NumbersSpeakSection";
 import PlumberWorking from "../images/plumberWorking.jpeg";
 import WhyChooseUse from "../components/whyChooseUs";
+import Pipe from "../assets/pipe.svg";
 
 const Homepage = () => {
   const phoneNumber = "+8318403058";
   return (
     <>
-      {" "}
       <Nav />
       <div id="home" className=" font-newFont overflow-hidden ">
         <div
@@ -149,12 +149,18 @@ const Homepage = () => {
 
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg mb-10 mt-5 flex flex-col md:flex-row items-center justify-around">
           <NumbersSpeak
+            icon={Pipe}
             number="24/7"
             text="Emergency service, we'll be there as soon as possible "
           />
 
-          <NumbersSpeak number="15+" text="Positive Ratings on our Yelp page" />
           <NumbersSpeak
+            icon={Pipe}
+            number="15+"
+            text="Positive Ratings on our Yelp page"
+          />
+          <NumbersSpeak
+            icon={Pipe}
             number="1k+"
             text="Customers are satisfied with our services"
           />
@@ -193,14 +199,14 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <RouterLink to="/Services">
+          <a href="/Services">
             <button
               type="button"
               className="text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
             >
               More Services
             </button>
-          </RouterLink>
+          </a>
         </div>
 
         <ContactSection />
