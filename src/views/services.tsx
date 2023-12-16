@@ -12,7 +12,7 @@ import Trenchless from "../assets/trenchless.svg";
 import NewConstruction from "../assets/newConstruction.svg";
 import ContactSection from "../components/EmailForm";
 import Footer from "../components/Footer";
-import Pipe from "../assets/pipe.svg";
+import Pipe from "../images/pipe.svg";
 
 const ServicesView = () => {
   return (

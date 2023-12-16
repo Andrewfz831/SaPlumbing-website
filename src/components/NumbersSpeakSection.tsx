@@ -1,5 +1,6 @@
+import Pipe from "../assets/pipe.svg";
+
 interface SectionProps {
-  icon: string;
   number: string;
   text: string;
 }
@@ -10,7 +11,7 @@ const NumbersSpeak: React.FC<SectionProps> = (props) => {
       <div
         className=" w-56 h-56 flex flex-col justify-center items-center"
         style={{
-          backgroundImage: `url(${props.icon})`,
+          backgroundImage: Pipe,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
