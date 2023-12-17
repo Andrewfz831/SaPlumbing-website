@@ -5,20 +5,13 @@ import Img2 from "../images/drainCleaning.png";
 import WhyChooseUs from "../components/whyChooseUs";
 import Phone from "../assets/phone-call.svg";
 import ContactSection from "../components/EmailForm";
+import "../App.css";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div
-        className=" py-36 flex flex-col justify-center px-28 text-white bg-neutral-900"
-        style={{
-          backgroundImage: 'url("../assets/pipe.svg")',
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className=" bgImg py-36 flex flex-col justify-center px-28 text-white bg-neutral-900">
         <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
           About Us
         </h2>
