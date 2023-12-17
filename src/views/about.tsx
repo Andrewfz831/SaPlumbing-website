@@ -5,7 +5,6 @@ import Img2 from "../images/drainCleaning.png";
 import WhyChooseUs from "../components/whyChooseUs";
 import Phone from "../assets/phone-call.svg";
 import ContactSection from "../components/EmailForm";
-import Pipe from "../assets/pipe.svg";
 
 const About = () => {
   return (
@@ -14,7 +13,7 @@ const About = () => {
       <div
         className=" py-36 flex flex-col justify-center px-28 text-white bg-neutral-900"
         style={{
-          backgroundImage: `url(${Pipe})`,
+          backgroundImage: 'url("../assets/pipe.svg")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
