@@ -34,15 +34,8 @@ const ContactSection = () => {
       });
   };
   return (
-    <div id="contact" className="bg-gradient-to-br from-sky-500 to-blue-900">
+    <div id="contact" className="bg-blue-500">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="pb-5 text-5xl text-white text-center font-semibold">
-          Contact Us
-        </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
-          Got any issues? Want to send feedback? Need details about our
-          Business? Let us know.
-        </p>
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
             <label className="block mb-2 text-sm font-medium text-white">

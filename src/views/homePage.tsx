@@ -1,9 +1,7 @@
 import Nav from "../components/Nav";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Fixture from "../assets/fixture.svg";
-import ContactSection from "../components/EmailForm";
 import Repair from "../assets/repair.svg";
 import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
@@ -50,20 +48,14 @@ const Homepage = () => {
                     Call
                   </button>
                 </a>
-                <ScrollLink
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
+                <Link to="/Contact">
                   <button
                     type="button"
                     className="text-white  border-2 border-white font-medium rounded-lg text-lg px-4 py-2 text-center mr-3 md:mr-0 hover:bg-orange-500 hover:border-orange-500"
                   >
                     Send us an email
                   </button>
-                </ScrollLink>
+                </Link>
               </div>
             </div>
           </div>
@@ -122,14 +114,29 @@ const Homepage = () => {
                 We Believe in providing superior customer service & plumbing
                 maintenance/repairs for optimal functionality
               </p>
-              <RouterLink to="https://www.yelp.com/biz/sa-plumbing-freedom?hrid=uJRLWdxNDNvzrdTIS50geg&rh_ident=Sergio&rh_type=people">
+              <Link to="https://www.yelp.com/biz/sa-plumbing-freedom?hrid=uJRLWdxNDNvzrdTIS50geg&rh_ident=Sergio&rh_type=people">
                 <button
                   type="button"
-                  className="text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
+                  className="flex flex-row items-center text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
                 >
                   More Reviews
+                  <svg
+                    className="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
                 </button>
-              </RouterLink>
+              </Link>
             </div>
             <ImageCarousel2 />
           </div>
@@ -195,14 +202,126 @@ const Homepage = () => {
           <a href="/Services">
             <button
               type="button"
-              className="text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
+              className="flex flex-row items-center text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
             >
               More Services
+              <svg
+                className="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
             </button>
           </a>
         </div>
+        <h2 className="flex justify-center p-5 text-4xl md:text-5xl text-neutral-800 font-semibold border-b-2 border-blue-500 mb-10">
+          Our Work
+        </h2>
 
-        <ContactSection />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid gap-4">
+            <div>
+              <img
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                alt=""
+                className="h-auto max-w-full rounded-lg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                alt=""
+                className="h-auto max-w-full rounded-lg"
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </div>
     </>

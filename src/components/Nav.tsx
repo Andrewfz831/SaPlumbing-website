@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscClose } from "react-icons/vsc";
 import Logo from "../images/SA_Logo_2-removebg-preview.png";
@@ -10,15 +9,15 @@ const Navbar: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth < 768); // Adjust this value as per your breakpoint for mobile screens
+    setIsMobile(window.innerWidth < 768);
   };
 
   useEffect(() => {
-    handleResize(); // Set initial state based on screen size
-    window.addEventListener("resize", handleResize); // Listen for window resize events
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Clean up the event listener
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -49,40 +48,36 @@ const Navbar: React.FC = () => {
           } font-medium bg-neutral-900 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
         >
           <li className="md:ml-8  md:my-0 my-7">
-            <RouterLink
+            <Link
               to="/"
               className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
             >
               Home
-            </RouterLink>
+            </Link>
           </li>
           <li className="md:ml-8  md:my-0 my-7">
-            <RouterLink
+            <Link
               to="/About-SAPlumbing"
               className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
             >
               About
-            </RouterLink>
+            </Link>
           </li>
           <li className="md:ml-8  md:my-0 my-7">
-            <RouterLink
+            <Link
               to="/Services"
               className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
             >
               Services
-            </RouterLink>
+            </Link>
           </li>
           <li className="md:ml-8  md:my-0 my-7">
-            <ScrollLink
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+            <Link
+              to="/Contact"
               className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
             >
               Contact
-            </ScrollLink>
+            </Link>
           </li>
         </ul>
       </div>

@@ -27,6 +27,11 @@ const Footer: React.FC = () => {
                 Services
               </Link>
             </li>
+            <li>
+              <Link to="/Contact" className="hover:underline me-4 md:me-6">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <BusinessInfo />

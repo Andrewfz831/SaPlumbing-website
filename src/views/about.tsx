@@ -4,14 +4,13 @@ import Img from "../images/hydroJetting.png";
 import Img2 from "../images/drainCleaning.png";
 import WhyChooseUs from "../components/whyChooseUs";
 import Phone from "../assets/phone-call.svg";
-import ContactSection from "../components/EmailForm";
 import "../App.css";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className=" bgImg py-36 flex flex-col justify-center px-28 text-white bg-neutral-900">
+      <div className=" bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900">
         <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
           About Us
         </h2>
@@ -54,7 +53,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:items-stretch md:flex-row mb-5">
+      <div className="flex flex-col items-center md:items-stretch md:flex-row">
         <div className=" md:w-1/2 mt-5 md:mr-1 p-12 bg-blue-500 text-white">
           <h3 className="pb-5 text-4xl font-semibold">
             We're here to help, ive us a call any time!
@@ -64,11 +63,10 @@ const About = () => {
             <span className="text-2xl ml-5">(831) 840-3058</span>
           </div>
         </div>
-        <div className="md:w-1/2 md:mt-5 md:mr-20">
+        <div className="md:w-1/2 mt-5 md:mr-20">
           <img src={Img2} alt="" className="h-full" />
         </div>
       </div>
-      <ContactSection />
       <Footer />
     </>
   );
