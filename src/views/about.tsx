@@ -5,7 +5,7 @@ import Img2 from "../images/drainCleaning.png";
 import WhyChooseUs from "../components/whyChooseUs";
 import Phone from "../assets/phone-call.svg";
 import ContactSection from "../components/EmailForm";
-import Pipe from "../images/pipe.svg";
+import Pipe from "../assets/pipe.svg";
 
 const About = () => {
   return (
