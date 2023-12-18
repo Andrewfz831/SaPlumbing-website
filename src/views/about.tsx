@@ -4,9 +4,11 @@ import Img from "../images/hydroJetting.png";
 import Img2 from "../images/drainCleaning.png";
 import WhyChooseUs from "../components/whyChooseUs";
 import Phone from "../assets/phone-call.svg";
+import Email from "../assets/mail.svg";
 import "../App.css";
 
 const About = () => {
+  const phoneNumber = "+8318403058";
   return (
     <>
       <Navbar />
@@ -36,8 +38,8 @@ const About = () => {
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 mt-5 m-10 md:ml-20">
-          <h3 className="text-4xl text-gray-700 my-5">Our Mission</h3>
-          <p>
+          <h3 className="text-4xl text-neutral-800 my-5">Our Mission</h3>
+          <p className="text-gray-500">
             At SA Plumbing, our mission is simple: to deliver top-notch,
             reliable plumbing services while prioritizing customer satisfaction.
             Our team comprises skilled professionals who are not just experts in
@@ -56,11 +58,19 @@ const About = () => {
       <div className="flex flex-col items-center md:items-stretch md:flex-row">
         <div className=" md:w-1/2 mt-5 md:mr-1 p-12 bg-blue-500 text-white">
           <h3 className="pb-5 text-4xl font-semibold">
-            We're here to help, ive us a call any time!
+            We're here to help, give us a call or send us an email anytime!
           </h3>
-          <div className="flex flex-row">
-            <img src={Phone} alt="" className="w-10" />
-            <span className="text-2xl ml-5">(831) 840-3058</span>
+          <div>
+            <a href={`tel:${phoneNumber}`} className="flex flex-row mb-5">
+              <img src={Phone} alt="" className="w-10" />
+              <span className="text-2xl ml-5">(831) 840-3058</span>
+            </a>
+          </div>
+          <div>
+            <a href="/Contact" className="flex flex-row">
+              <img src={Email} alt="" className="w-10" />
+              <span className="text-2xl ml-5">S.Aplumbing@yahoo.com</span>
+            </a>
           </div>
         </div>
         <div className="md:w-1/2 mt-5 md:mr-20">

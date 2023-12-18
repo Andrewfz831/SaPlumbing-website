@@ -73,12 +73,12 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className=" flex flex-col items-center md:items-start px-10 py-5">
+          <div className=" text-neutral-800 flex flex-col items-center md:items-start px-10 py-5">
             <div className=" text-xl font-medium pb-5">Why Choose Us?</div>
             <div className=" text-5xl font-semibold">
               Focused on getting the job done!
             </div>
-            <p className="text-center md:text-left py-5">
+            <p className="text-center md:text-left py-5 text-gray-500">
               Efficient solutions for all your plumbing needs. We tackle every
               task with expertise and dedication.
             </p>
@@ -143,7 +143,7 @@ const Homepage = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="flex justify-center mt-10 text-4xl md:text-5xl text-gray-700 font-semibold">
+          <h3 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold">
             Numbers Speak
           </h3>
           <p className="m-10 text-center text-lg max-w-2xl text-gray-500">
@@ -233,7 +233,7 @@ const Homepage = () => {
               <img
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
                 alt=""
-                className="h-auto max-w-full rounded-lg"
+                className="h-auto max-w-full rounded-lg "
               />
             </div>
             <div>
