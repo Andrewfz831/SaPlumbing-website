@@ -10,18 +10,17 @@ import Leak from "../assets/leak.svg";
 import WaterHeater from "../assets/waterHeater.svg";
 import Trenchless from "../assets/trenchless.svg";
 import NewConstruction from "../assets/newConstruction.svg";
-import Phone from "../assets/phone-call.svg";
-import Email from "../assets/mail.svg";
 import Footer from "../components/Footer";
 import "../App.css";
 
 const ServicesView = () => {
   const phoneNumber = "+8318403058";
+
   return (
     <>
       <Navbar />
 
-      <div className="bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900">
+      <div className="bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900">
         <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
           Our Services
         </h2>
@@ -122,27 +121,17 @@ const ServicesView = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-5 md:mr-1 p-5 bg-blue-500 text-white">
-        <h3 className="pb-5 text-4xl font-semibold">
-          Give us a call or send us an email to schedule!
+      <div className="flex items-center md:items-start flex-col  mt-5 md:mr-1 p-12 bg-blue-500 text-white">
+        <h3 className="pb-5 text-2xl md:text-4xl font-semibold text-center md:text-left">
+          We're here to help, give us a call anytime!
         </h3>
-        <div className="flex flex-col md:flex-row">
-          <a href={`tel:${phoneNumber}`} className="flex flex-row">
+        <div>
+          <a href={`tel:${phoneNumber}`}>
             <button
               type="button"
-              className="flex flex-row mb-2 text-white bg-blue-600 border-2 border-blue-600 font-medium rounded-lg text-lg px-4 py-2 h-14 text-center mr-3 hover:bg-orange-500 hover:border-orange-500"
+              className="first-letter:text-white bg-transparent border-2 border-white font-medium rounded-lg text-lg px-4 py-2 text-center mr-3 hover:bg-blue-600 hover:border-blue-600"
             >
-              <img src={Phone} alt="" className="w-10" />
-              <span className="text-2xl ml-5">(831) 840-3058</span>
-            </button>
-          </a>
-          <a href="/Contact" className="flex flex-row">
-            <button
-              type="button"
-              className="flex flex-row text-white bg-blue-600 border-2 border-blue-600 font-medium rounded-lg text-lg px-4 py-2 h-14 text-center mr-3 hover:bg-orange-500 hover:border-orange-500"
-            >
-              <img src={Email} alt="" className="w-10" />
-              <span className="text-2xl ml-5">Email Us</span>
+              <span className="text-xl md:text-2xl">(831) 840-3058</span>
             </button>
           </a>
         </div>

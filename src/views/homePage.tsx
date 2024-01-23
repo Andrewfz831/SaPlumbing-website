@@ -6,11 +6,11 @@ import Repair from "../assets/repair.svg";
 import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
 import ImageCarousel2 from "../components/CarouselImg2";
-import BackgroundImg from "../images/bgPipes.jpeg";
-import ScBg from "../images/AdobeStock_227980864_Preview.jpeg";
+import BackgroundImg from "../images/sa-van-img.png";
+import ScBg from "../images/sa-test-img6.png";
 import NumbersSpeak from "../components/NumbersSpeakSection";
-import PlumberWorking from "../images/plumberWorking.jpeg";
 import WhyChooseUse from "../components/whyChooseUs";
+import OurWork from "../components/OurWork";
 
 const Homepage = () => {
   const phoneNumber = "+8318403058";
@@ -19,13 +19,14 @@ const Homepage = () => {
       <Nav />
       <div id="home" className=" font-newFont overflow-hidden ">
         <div
-          className=" py-52 flex flex-col justify-center"
-          style={{
-            backgroundImage: `url(${BackgroundImg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+          className=" bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900"
+          // className=" py-52 flex flex-col justify-center "
+          // style={{
+          //   backgroundImage: `url(${BackgroundImg})`,
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center",
+          // }}
         >
           {/* <div className="flex justify-center md:justify-end"> */}
           <div className="flex justify-center">
@@ -33,9 +34,9 @@ const Homepage = () => {
               {/* <div className="w-3/4 flex flex-col justify-center text-center items-center  "> */}
               <div>
                 <h2 className="text-white text-4xl md:text-6xl p-5">
-                  SA Plumbing
+                  Repair | Replace | Remodel
                 </h2>
-                <h1 className="text-white flex flex-col justify-center h-fill text-2xl md:text-3xl pb-2">
+                <h1 className="text-white flex flex-col justify-center h-fill text-2xl md:text-3xl pb-5">
                   24/7 Emergency Service
                 </h1>
               </div>
@@ -63,7 +64,7 @@ const Homepage = () => {
         <div className="my-20 flex justify-center items-center flex-col lg:flex-row">
           <div className=" flex flex-col justify-end items-end">
             <div className=" relative flex justify-end border ">
-              <img src={PlumberWorking} alt="" className=" h-96" />
+              <img src={BackgroundImg} alt="" className=" h-96" />
 
               <div className="flex flex-col items-center justify-center w-52 h-40 bg-orange-500 absolute bottom-64">
                 <span className="text-white text-5xl font-semibold">15+</span>
@@ -97,7 +98,7 @@ const Homepage = () => {
         <div id="reviews" className="h-14 "></div>
 
         <div
-          className="bg-fixed "
+          className="md:bg-fixed relative"
           style={{
             backgroundImage: `url(${ScBg})`,
             backgroundRepeat: "no-repeat",
@@ -105,7 +106,8 @@ const Homepage = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="  md:mx-auto lg:max-w-screen-lg h-fit flex flex-col lg:flex-row justify-center items-center p-10">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="  md:mx-auto lg:max-w-screen-lg h-fit flex flex-col lg:flex-row justify-center items-center p-10 relative">
             <div className="flex flex-col items-center">
               <div className="text-white text-4xl md:text-5xl p-10 text-center font-semibold">
                 Our Testimonials
@@ -161,7 +163,7 @@ const Homepage = () => {
 
           <NumbersSpeak number="15+" text="Positive Ratings on our Yelp page" />
           <NumbersSpeak
-            number="1k+"
+            number="10k+"
             text="Customers are satisfied with our services"
           />
         </div>
@@ -226,101 +228,7 @@ const Homepage = () => {
         <h2 className="flex justify-center p-5 text-4xl md:text-5xl text-neutral-800 font-semibold border-b-2 border-blue-500 mb-10">
           Our Work
         </h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="grid gap-4">
-            <div>
-              <img
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                alt=""
-                className="h-auto max-w-full rounded-lg "
-              />
-            </div>
-            <div>
-              <img
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                alt=""
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        <OurWork />
 
         <Footer />
       </div>

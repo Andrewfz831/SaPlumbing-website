@@ -10,8 +10,8 @@ const ContactSection = () => {
     e.preventDefault();
 
     const serviceId = "service_yotqv8i";
-    const templateId = "template_uv0gd3r";
-    const publicKey = "GFSrKcyB2UTDVX8Ri";
+    const templateId = "template_c2lsr2h";
+    const publicKey = "8Bt_xTUMNxrnBgBUQ";
 
     const templateParams = {
       from_name: name,
