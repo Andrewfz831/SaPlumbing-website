@@ -1,6 +1,6 @@
 import Navbar from "../components/Nav";
 import Footer from "../components/Footer";
-import Img from "../images/sa-img-water-line-work.png";
+import Img from "../images/sa-img-water-line-work.avif";
 import WhyChooseUs from "../components/whyChooseUs";
 import "../App.css";
 

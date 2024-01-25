@@ -7,7 +7,7 @@ import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
 import ImageCarousel2 from "../components/CarouselImg2";
 import BackgroundImg from "../images/sa-van-img.avif";
-import ScBg from "../images/sa-test-img6.png";
+import ScBg from "../images/sa-testimonial-bg-img.avif";
 import NumbersSpeak from "../components/NumbersSpeakSection";
 import WhyChooseUse from "../components/whyChooseUs";
 import OurWork from "../components/OurWork";
@@ -173,7 +173,7 @@ const Homepage = () => {
         >
           Our Services
         </h2>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center ">
           <div className=" flex justify-around items-center  md:py-20 ">
             <div className="flex-col md:flex-row flex items-center">
               <div>

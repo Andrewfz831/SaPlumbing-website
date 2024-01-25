@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscClose } from "react-icons/vsc";
@@ -7,6 +8,8 @@ import Logo from "../images/SA_Logo_2-removebg-preview.png";
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const location = useLocation();
 
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
@@ -50,7 +53,11 @@ const Navbar: React.FC = () => {
           <li className="md:ml-8  md:my-0 my-7">
             <Link
               to="/"
-              className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
+              className={`block py-2 pl-3 pr-4 rounded ${
+                location.pathname === "/"
+                  ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+              }`}
             >
               Home
             </Link>
@@ -58,7 +65,11 @@ const Navbar: React.FC = () => {
           <li className="md:ml-8  md:my-0 my-7">
             <Link
               to="/About-SAPlumbing"
-              className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
+              className={`block py-2 pl-3 pr-4 rounded ${
+                location.pathname === "/About-SAPlumbing"
+                  ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+              }`}
             >
               About
             </Link>
@@ -66,7 +77,11 @@ const Navbar: React.FC = () => {
           <li className="md:ml-8  md:my-0 my-7">
             <Link
               to="/Services"
-              className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
+              className={`block py-2 pl-3 pr-4 rounded ${
+                location.pathname === "/Services"
+                  ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+              }`}
             >
               Services
             </Link>
@@ -74,7 +89,11 @@ const Navbar: React.FC = () => {
           <li className="md:ml-8  md:my-0 my-7">
             <Link
               to="/Contact"
-              className="block py-2 pl-3 pr-4 rounded text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:border-b-2 md:hover:border-blue-500 md:p-0 md:hover:rounded-none duration-100"
+              className={`block py-2 pl-3 pr-4 rounded ${
+                location.pathname === "/Contact"
+                  ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+              }`}
             >
               Contact
             </Link>
