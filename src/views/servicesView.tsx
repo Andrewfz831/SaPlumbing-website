@@ -6,7 +6,7 @@ import VideoInspection from "../assets/camera.svg";
 import Hydro from "../assets/gauge.svg";
 import Descaling from "../assets/drain.svg";
 import Smoke from "../assets/smoke-bomb-svgrepo-com.svg";
-import Leak from "../assets/leak.svg";
+import Leak from "../assets/fancyleak.svg";
 import WaterHeater from "../assets/waterHeater.svg";
 import Trenchless from "../assets/trenchless.svg";
 import NewConstruction from "../assets/newConstruction.svg";

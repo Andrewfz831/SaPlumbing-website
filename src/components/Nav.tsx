@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         <ul
           className={`${
             !isMobile || open ? "visible-menu" : "hidden"
-          } font-medium bg-neutral-900 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
+          } md:flex md:items-center font-medium bg-neutral-900 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
         >
           <li className="md:ml-8  md:my-0 my-7">
             <Link

@@ -6,7 +6,7 @@ import Repair from "../assets/repair.svg";
 import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
 import ImageCarousel2 from "../components/CarouselImg2";
-import BackgroundImg from "../images/sa-van-img.png";
+import BackgroundImg from "../images/sa-van-img.avif";
 import ScBg from "../images/sa-test-img6.png";
 import NumbersSpeak from "../components/NumbersSpeakSection";
 import WhyChooseUse from "../components/whyChooseUs";
@@ -19,7 +19,7 @@ const Homepage = () => {
       <Nav />
       <div id="home" className=" font-newFont overflow-hidden ">
         <div
-          className=" bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900"
+          className=" md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900"
           // className=" py-52 flex flex-col justify-center "
           // style={{
           //   backgroundImage: `url(${BackgroundImg})`,
@@ -145,9 +145,9 @@ const Homepage = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold">
+          <h2 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold">
             Numbers Speak
-          </h3>
+          </h2>
           <p className="m-10 text-center text-lg max-w-2xl text-gray-500">
             Showcasing the trust and satisfaction of our clientele. Our
             commitment to excellence resonates through the numerous satisfied
