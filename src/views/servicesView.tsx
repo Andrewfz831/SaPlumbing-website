@@ -20,7 +20,7 @@ const ServicesView = () => {
     <>
       <Navbar />
 
-      <div className="bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900">
+      <div className="bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
         <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
           Our Services
         </h2>

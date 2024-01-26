@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscClose } from "react-icons/vsc";
-import Logo from "../images/SA_Logo_2-removebg-preview.png";
+import Logo from "../images/SA_Logo_2-removebg-preview.webp";
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="shadow-md w-full border-b-2 border-neutral-700">
-      <div className="md:flex justify-between bg-neutral-900 py-6 md:px-10 px-7">
+      <div className="md:flex justify-between bg-neutral-800 py-6 md:px-10 px-7">
         <div className="font-bold cursor-pointer">
           <div className="flex flex-col items-center">
             <img src={Logo} alt="" className="h-20" />
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
         <ul
           className={`${
             !isMobile || open ? "visible-menu" : "hidden"
-          } md:flex md:items-center font-medium bg-neutral-900 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
+          } md:flex md:items-center font-medium bg-neutral-800 bg-opacity-95 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0`}
         >
           <li className="md:ml-8  md:my-0 my-7">
             <Link

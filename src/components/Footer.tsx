@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../images/SA_Logo_2-removebg-preview.png";
+import Logo from "../images/SA_Logo_2-removebg-preview.webp";
 import BusinessInfo from "./BisinessInfo";
 
 const Footer: React.FC = () => {

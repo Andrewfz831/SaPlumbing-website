@@ -19,7 +19,7 @@ const Homepage = () => {
       <Nav />
       <div id="home" className=" font-newFont overflow-hidden ">
         <div
-          className=" md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-900"
+          className=" bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800"
           // className=" py-52 flex flex-col justify-center "
           // style={{
           //   backgroundImage: `url(${BackgroundImg})`,
@@ -144,7 +144,7 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center max-w-screen-2xl">
           <h2 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold">
             Numbers Speak
           </h2>
@@ -155,7 +155,7 @@ const Homepage = () => {
           </p>
         </div>
 
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg mb-10 mt-5 flex flex-col md:flex-row items-center justify-around">
+        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-2xl mb-10 mt-5 flex flex-col md:flex-row items-center justify-around">
           <NumbersSpeak
             number="24/7"
             text="Emergency service, we'll be there as soon as possible "
