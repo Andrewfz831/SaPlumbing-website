@@ -21,9 +21,9 @@ const ServicesView = () => {
       <Navbar />
 
       <div className="md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
-        <h2 className="flex justify-start py-10 text-4xl md:text-5xl ">
-          Our Services
-        </h2>
+        <h1 className="flex justify-start py-10 text-4xl md:text-5xl ">
+          Our Plumbing Services
+        </h1>
         <p className=" md:w-2/5">
           We offer a wide range of plumbing services, repairs, replacements and
           remodels for residential and commercial setups.

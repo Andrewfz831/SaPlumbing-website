@@ -30,9 +30,9 @@ const Navbar: React.FC = () => {
         <div className="font-bold cursor-pointer">
           <div className="flex flex-col items-center">
             <img src={Logo} alt="" className="h-20" />
-            <div className="text-white font-normal text-3xl pl-2">
+            <h1 className="text-white font-normal text-3xl pl-2">
               SA Plumbing Inc.
-            </div>
+            </h1>
           </div>
         </div>
         <div

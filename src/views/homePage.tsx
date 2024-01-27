@@ -19,7 +19,7 @@ const Homepage = () => {
       <Nav />
 
       <div
-        className=" md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800"
+        className="font-newFont md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800"
         // className=" py-52 flex flex-col justify-center "
         // style={{
         //   backgroundImage: `url(${BackgroundImg})`,
@@ -33,29 +33,25 @@ const Homepage = () => {
           <div className="flex flex-col justify-center text-center items-center  ">
             {/* <div className="w-3/4 flex flex-col justify-center text-center items-center  "> */}
             <div>
-              <h2 className="text-white text-4xl md:text-6xl p-5">
-                Repair, Replace, Remodel
-              </h2>
-              <h1 className="text-white flex flex-col justify-center h-fill text-2xl md:text-3xl pb-5">
-                24/7 Emergency Service
+              <h1 className="text-white text-5xl p-5">
+                Expert Plumbing Services
               </h1>
+              <h2 className="text-white flex flex-col justify-center h-fill text-4xl pb-5">
+                24/7 Emergency Service
+              </h2>
             </div>
-            <div className="flex flex-row">
-              <a href={`tel:${phoneNumber}`}>
-                <button
-                  type="button"
-                  className="text-white bg-blue-600 border-2 border-blue-600 font-medium rounded-lg text-lg px-4 py-2 text-center mr-3 hover:bg-orange-500 hover:border-orange-500"
-                >
-                  Call
-                </button>
+            <div className="flex flex-col md:flex-row justify-center mb-32 w-screen">
+              <a
+                href={`tel:${phoneNumber}`}
+                className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-blue-600 border-2 border-blue-600 rounded-lg shadow-none transition duration-500 ease-out transform  hover:shadow-inner hover:shadow-blue-500 active:scale-90"
+              >
+                <button type="button">Call to Schedule</button>
               </a>
-              <Link to="/Contact">
-                <button
-                  type="button"
-                  className="text-white  border-2 border-white font-medium rounded-lg text-lg px-4 py-2 text-center mr-3 md:mr-0 hover:bg-orange-500 hover:border-orange-500"
-                >
-                  Send us an email
-                </button>
+              <Link
+                to="/Contact"
+                className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-transparent border-2 border-white rounded-lg shadow-none transition duration-500 ease-out transform hover:text-white hover:bg-blue-600 hover:border-blue-600 hover:shadow-inner active:scale-90"
+              >
+                <button type="button">Email Us</button>
               </Link>
             </div>
           </div>
@@ -98,24 +94,9 @@ const Homepage = () => {
         <a href="/Services">
           <button
             type="button"
-            className="flex flex-row items-center text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
+            className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-blue-600 border-2 border-blue-600 rounded-lg shadow-none transition duration-500 ease-out transform  hover:shadow-inner hover:shadow-blue-500 active:scale-90"
           >
             More Services
-            <svg
-              className="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
           </button>
         </a>
       </div>
@@ -177,24 +158,9 @@ const Homepage = () => {
             <Link to="https://www.yelp.com/biz/sa-plumbing-freedom?hrid=uJRLWdxNDNvzrdTIS50geg&rh_ident=Sergio&rh_type=people">
               <button
                 type="button"
-                className="flex flex-row items-center text-white bg-blue-600 border-2 border-blue-600  font-medium rounded-lg text-lg px-4 py-2 text-center m-10 hover:bg-orange-500 hover:border-orange-500"
+                className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-blue-600 border-2 border-blue-600 rounded-lg shadow-none transition duration-500 ease-out transform  hover:shadow-inner hover:shadow-blue-500 active:scale-90"
               >
                 More Reviews
-                <svg
-                  className="w-3.5 h-3.5 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
               </button>
             </Link>
           </div>
