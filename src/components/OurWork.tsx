@@ -15,31 +15,67 @@ const OurWork = () => {
     <div className="flex justify-center">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-2xl">
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg1} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg1}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg2} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg2}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg3} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg3}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={TestImg1} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={TestImg1}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={TestImg2} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={TestImg2}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={TestImg3} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={TestImg3}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg5} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg5}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg4} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg4}
+            alt=""
+          />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg" src={JobImg6} alt="" />
+          <img
+            className="h-auto md:h-[600px] max-w-96 rounded-lg"
+            src={JobImg6}
+            alt=""
+          />
         </div>
         {/* <div>
           <img className="h-auto max-w-full rounded-lg" src={TestImg5} alt="" />

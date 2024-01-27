@@ -19,7 +19,7 @@ const Homepage = () => {
       <Nav />
       <div id="home" className=" font-newFont overflow-hidden ">
         <div
-          className=" bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800"
+          className=" md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800"
           // className=" py-52 flex flex-col justify-center "
           // style={{
           //   backgroundImage: `url(${BackgroundImg})`,
@@ -144,8 +144,8 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center max-w-screen-2xl">
-          <h2 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold">
+        <div className="flex flex-col items-center ">
+          <h2 className="flex justify-center mt-10 text-4xl md:text-5xl text-neutral-800 font-semibold text-center">
             Numbers Speak
           </h2>
           <p className="m-10 text-center text-lg max-w-2xl text-gray-500">
