@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               className={`block py-2 pl-3 pr-4 rounded ${
                 location.pathname === "/"
                   ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
-                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 border-neutral-800 md:hover:text-blue-500 md:p-0 md:rounded-none duration-100"
               }`}
             >
               Home
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
               className={`block py-2 pl-3 pr-4 rounded ${
                 location.pathname === "/About-SAPlumbing"
                   ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
-                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 border-neutral-800 md:hover:text-blue-500 md:p-0 md:rounded-none duration-100"
               }`}
             >
               About
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
               className={`block py-2 pl-3 pr-4 rounded ${
                 location.pathname === "/Services"
                   ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
-                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 border-neutral-800 md:hover:text-blue-500 md:p-0 md:rounded-none duration-100"
               }`}
             >
               Services
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               className={`block py-2 pl-3 pr-4 rounded ${
                 location.pathname === "/Contact"
                   ? "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 md:border-blue-500 md:p-0 md:rounded-none duration-100"
-                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:hover:text-blue-500 duration-100"
+                  : "text-white hover:bg-blue-500 hover:text-white  md:hover:bg-transparent md:border-b-2 border-neutral-800 md:hover:text-blue-500 md:p-0 md:rounded-none duration-100"
               }`}
             >
               Contact
