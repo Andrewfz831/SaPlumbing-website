@@ -12,7 +12,7 @@ const WhyChooseUs: React.FC<SectionProps> = (props) => {
           <FaCircleCheck className="text-blue-600" />
         </div>
         <div>
-          <p className="px-5 py-1 text-gray-500">{props.text}</p>
+          <p className="px-5 py-1 text-gray-600">{props.text}</p>
         </div>
       </div>
     </>

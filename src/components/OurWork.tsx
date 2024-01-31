@@ -1,8 +1,7 @@
 import TestImg1 from "../images/sa-pic0.avif";
 import TestImg2 from "../images/sa-test-img2.avif";
 import TestImg3 from "../images/sa-test-img3.avif";
-// import TestImg5 from "../images/sa-test-img5.png";
-// import TestImg6 from "../images/sa-test-img6.png";
+import WaterHeater from "../images/sa-water-heater-img.avif";
 import JobImg1 from "../images/sa-job-img1.avif";
 import JobImg2 from "../images/sa-job-img2.avif";
 import JobImg3 from "../images/sa-job-img3.avif";
@@ -75,6 +74,13 @@ const OurWork = () => {
             <img
               className="h-auto md:h-[600px] max-w-96 rounded-lg"
               src={JobImg6}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto md:h-[600px] max-w-96 rounded-lg"
+              src={WaterHeater}
               alt=""
             />
           </div>

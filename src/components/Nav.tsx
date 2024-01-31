@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="flex flex-row text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="flex flex-row text-3xl absolute right-8 top-10 cursor-pointer md:hidden"
         >
           {open ? (
             <VscClose className="text-white" />

@@ -18,6 +18,11 @@ const ServicesView = () => {
 
   return (
     <>
+      <a href={`tel:${phoneNumber}`}>
+        <div className="bg-blue-600 text-white flex justify-center texl-lg md:text-xl md:p-2">
+          Call (831)840-3058
+        </div>
+      </a>
       <Navbar />
 
       <div className="md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
