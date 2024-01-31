@@ -134,9 +134,9 @@ const ServicesView = () => {
           <a href={`tel:${phoneNumber}`}>
             <button
               type="button"
-              className="first-letter:text-white bg-transparent border-2 border-white font-medium rounded-lg text-lg px-4 py-2 text-center mr-3 hover:bg-blue-600 hover:border-blue-600"
+              className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-transparent border-2 border-white rounded-lg shadow-none transition duration-500 ease-out transform hover:text-white hover:bg-blue-800 hover:border-blue-800 hover:shadow-inner active:scale-90"
             >
-              <span className="text-xl md:text-2xl">(831) 840-3058</span>
+              <span className="text-xl">(831) 840-3058</span>
             </button>
           </a>
         </div>

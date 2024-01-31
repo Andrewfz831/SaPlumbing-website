@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
               </a>
 
               <a
-                href="#"
+                href="https://www.yelp.com/biz/sa-plumbing-freedom"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
               >
                 <FaYelp />

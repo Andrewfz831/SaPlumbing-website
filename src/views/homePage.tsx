@@ -148,16 +148,18 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className=" text-neutral-800 flex flex-col items-center md:items-start px-10 py-5">
-          <div className=" text-xl font-medium pb-5">Why Choose Us?</div>
+        <div className="text-center text-blue-900 flex flex-col items-center md:items-start px-10 py-5">
+          <div className=" text-xl font-medium pb-5 text-orange-500">
+            Why Choose Us?
+          </div>
           <div className=" text-5xl font-semibold">
             Focused on getting the job done!
           </div>
-          <p className="text-center md:text-left py-5 text-gray-600">
+          <p className="md:text-left py-5 text-gray-600">
             Efficient solutions for all your plumbing needs. We tackle every
             task with expertise and dedication.
           </p>
-          <div>
+          <div className=" text-left">
             <WhyChooseUse text="Unmatched performance, satisfaction service guarantees" />
             <WhyChooseUse text="Fully lisenced LIC# 1035812" />
             <WhyChooseUse text="Home protection through our shoe covers and mats" />
