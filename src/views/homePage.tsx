@@ -70,7 +70,7 @@ const Homepage = () => {
         Our Services
       </h2>
       <div className="flex items-center justify-center py-10">
-        <div className="max-w-screen-2xl">
+        <div className="max-w-screen-xl">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <IconSection
