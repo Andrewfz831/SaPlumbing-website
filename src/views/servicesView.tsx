@@ -1,16 +1,17 @@
 import Navbar from "../components/Nav";
 import Services from "../components/Services";
-import DrainCleaning from "../assets/pipe1.svg";
-import Fixture from "../assets/fixture.svg";
-import VideoInspection from "../assets/camera.svg";
-import Hydro from "../assets/gauge.svg";
-import Descaling from "../assets/drain.svg";
-import Smoke from "../assets/smoke-bomb-svgrepo-com.svg";
-import Leak from "../assets/fancyleak.svg";
-import WaterHeater from "../assets/waterHeater.svg";
-import Trenchless from "../assets/trenchless.svg";
-import NewConstruction from "../assets/newConstruction.svg";
+import DrainCleaning from "../images/drain-cleaning-img.png";
+import Fixture from "../images/sink-faucet-img.png";
+import VideoInspection from "../images/video-inspection-img.png";
+import Hydro from "../images/hydro-jetting-img.png";
+import Descaling from "../images/rusty-pipes-img.png";
+import Smoke from "../images/smoke-test-img.png";
+import Leak from "../images/leaking-pipe-img.png";
+import WaterHeater from "../images/water-heater-img.png";
+import Trenchless from "../images/trenchless-img.png";
+// import NewConstruction from "../assets/newConstruction.svg";
 import Footer from "../components/Footer";
+import Test from "../images/new-construction.png";
 import "../App.css";
 
 const ServicesView = () => {
@@ -40,7 +41,7 @@ const ServicesView = () => {
       >
         How can we help?
       </h2>
-      <div className="flex justify-center">
+      <div className="flex justify-center md:bg-fixed bgImg">
         <div>
           <div className=" md:max-w-screen-lg">
             <div className="flex md:flex-row flex-col items-center justify-center">
@@ -53,9 +54,25 @@ const ServicesView = () => {
               </div>
               <div className="md:w-1/2 text-center">
                 <Services
+                  title="Fixture Service"
+                  img={Fixture}
+                  description="Revitalize your space with our professional service. From repairs to stylish replacements, we ensure top-quality fixtures for your convenience and aesthetics."
+                />
+              </div>
+            </div>
+            <div className="flex md:flex-row flex-col items-center justify-center">
+              <div className="md:w-1/2 text-center">
+                <Services
+                  title="Water Heater Service "
+                  img={WaterHeater}
+                  description="Whether repairs or replacements, our expert team handles all water heater needs with precision, ensuring reliable performance and uninterrupted hot water supply"
+                />
+              </div>
+              <div className="md:w-1/2 text-center ">
+                <Services
                   title="Leak Detection"
                   img={Leak}
-                  description="From water leaks to gas or plumbing issues, our advanced detection methods swiftly identify and resolve all types of leaks, safeguarding your property and ensuring peace of mind."
+                  description="From water leaks to gas or sewage, our advanced detection methods swiftly identify and resolve all types of leaks, saving your property and ensuring peace of mind."
                 />
               </div>
             </div>
@@ -69,13 +86,20 @@ const ServicesView = () => {
               </div>
               <div className="md:w-1/2 text-center">
                 <Services
+                  title="New Construction"
+                  img={Test}
+                  description="Partner with us for impeccable plumbing solutions in your new builds. Our expertise ensures precision, reliability, and quality in every aspect of plumbing installation for your project's success."
+                />
+              </div>
+            </div>
+            <div className="flex md:flex-row flex-col items-center justify-center">
+              <div className="md:w-1/2 text-center">
+                <Services
                   title="Descaling"
                   img={Descaling}
                   description="Tackle pipe buildup effortlessly with our specialized treatment, restoring plumbing systems to their optimal condition."
                 />
               </div>
-            </div>
-            <div className="flex md:flex-row flex-col items-center justify-center">
               <div className="md:w-1/2 text-center">
                 <Services
                   title="Smoke Testing"
@@ -83,6 +107,8 @@ const ServicesView = () => {
                   description=" Pinpoint leaks and identify plumbing issues swiftly using non-invasive smoke detection methods for a comprehensive diagnosis."
                 />
               </div>
+            </div>
+            <div className="flex md:flex-row flex-col items-center justify-center">
               <div className="md:w-1/2 text-center">
                 <Services
                   title="Video Inspection"
@@ -90,36 +116,11 @@ const ServicesView = () => {
                   description="We use high quality video inspection tools for all types of lines and for easy diagnosis."
                 />
               </div>
-            </div>
-            <div className="flex md:flex-row flex-col items-center justify-center">
-              <div className="md:w-1/2 text-center">
-                <Services
-                  title="Water Heater Service "
-                  img={WaterHeater}
-                  description="Whether repairs or replacements, our expert team handles all water heater needs with precision, ensuring reliable performance and uninterrupted hot water supply"
-                />
-              </div>
               <div className="md:w-1/2 text-center">
                 <Services
                   title="Trenchless Replacement"
                   img={Trenchless}
                   description="Modern solutions for seamless pipe replacement without disrupting your property. Efficient, non-invasive, and preserving the integrity of your surroundings."
-                />
-              </div>
-            </div>
-            <div className="flex md:flex-row flex-col items-center justify-center">
-              <div className="md:w-1/2 text-center">
-                <Services
-                  title="Fixture Service"
-                  img={Fixture}
-                  description="Revitalize your space with our professional service. From repairs to stylish replacements, we ensure top-quality fixtures for your convenience and aesthetics."
-                />
-              </div>
-              <div className="md:w-1/2 text-center">
-                <Services
-                  title="New Construction"
-                  img={NewConstruction}
-                  description="Partner with us for impeccable plumbing solutions in your new builds. Our expertise ensures precision, reliability, and quality in every aspect of plumbing installation for your project's success."
                 />
               </div>
             </div>

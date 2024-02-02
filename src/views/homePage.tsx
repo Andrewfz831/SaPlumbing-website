@@ -7,7 +7,7 @@ import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
 import WaterHeater from "../assets/waterHeater.svg";
 import Pipe from "../assets/pipe1.svg";
-import BackgroundImg from "../images/bgimg.avif";
+import BackgroundImg from "../images/leaking-ptrap-img.png";
 import VanImg from "../images/sa-van-img.avif";
 import Phone24Hour from "../assets/24-hours.svg";
 import WhyChooseUse from "../components/whyChooseUs";
@@ -25,8 +25,36 @@ const Homepage = () => {
       </a>
       <Nav />
 
-      <div
-        className="h-screen flex flex-col justify-center items-start relative lg:bg-fixed font-semibold"
+      <div className="flex flex-col-reverse md:flex-row text-center ">
+        <div className="md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
+          <h1 className="flex justify-start md:py-10 text-4xl md:text-5xl">
+            Expert Plumbing Services
+          </h1>
+          <h2 className="text-white text-2xl md:text-4xl py-5">
+            Santa Cruz | Watsonville | Surrounding Areas
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center ">
+            <a
+              href={`tel:${phoneNumber}`}
+              className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-blue-600 border-2 border-blue-600 rounded-lg shadow-none transition duration-500 ease-out transform  hover:shadow-inner hover:shadow-blue-500 hover:bg-blue-700 active:scale-90"
+            >
+              <button type="button">Call to Schedule</button>
+            </a>
+            <Link
+              to="/Contact"
+              className="inline-block relative w-auto md:w-56 mx-4 my-4 px-6 py-3 text-center text-lg font-medium tracking-wide text-white bg-transparent border-2 border-white rounded-lg shadow-none transition duration-500 ease-out transform hover:text-white hover:bg-blue-600 hover:border-blue-600 hover:shadow-inner active:scale-90"
+            >
+              <button type="button">Email Us</button>
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <img src={BackgroundImg} alt="" className="w-full" />
+        </div>
+      </div>
+
+      {/* <div
+        className="py-36 flex flex-col justify-center items-start relative lg:bg-fixed font-semibold"
         style={{
           backgroundImage: `url(${BackgroundImg})`,
           backgroundRepeat: "no-repeat",
@@ -62,7 +90,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <h2
         id="services"
         className="flex justify-center p-5 text-4xl md:text-5xl text-neutral-800 font-semibold border-b-2 border-blue-500"
