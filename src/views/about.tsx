@@ -24,7 +24,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center md:items-stretch md:flex-row  bgImg bg-fixed">
+      <div className="flex flex-col items-center md:items-stretch md:flex-row ">
         <div className="md:w-1/2 md:mt-5 md:ml-20 border border-red">
           <img src={Img} alt="Best plumber in watsonville." className="" />
         </div>

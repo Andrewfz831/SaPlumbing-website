@@ -25,12 +25,12 @@ const Homepage = () => {
       </a>
       <Nav />
 
-      <div className="flex flex-col-reverse md:flex-row text-center ">
-        <div className="md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
-          <h1 className="flex justify-start md:py-10 text-4xl md:text-5xl">
+      <div className="flex flex-col-reverse md:flex-row text-center">
+        <div className=" md:bg-fixed bgImg py-36 flex flex-col justify-center px-10 md:px-28 text-white bg-neutral-800">
+          <h1 className=" md:py-10 text-4xl md:text-6xl">
             Expert Plumbing Services
           </h1>
-          <h2 className="text-white text-2xl md:text-4xl py-5">
+          <h2 className="text-white text-2xl md:text-3xl py-5">
             Santa Cruz | Watsonville | Surrounding Areas
           </h2>
           <div className="flex flex-col md:flex-row justify-center ">
