@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </ul>
             <div className="flex mt-4 sm:justify-center text-lg sm:mt-0 p-5">
               <a
-                href="#"
+                href="https://www.instagram.com/saplumbinginc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <FaInstagram />

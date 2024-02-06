@@ -7,7 +7,7 @@ import Shower from "../assets/shower.svg";
 import IconSection from "../components/IconSection";
 import WaterHeater from "../assets/waterHeater.svg";
 import Pipe from "../assets/pipe1.svg";
-import BackgroundImg from "../images/newBg.png";
+import BackgroundImg from "../images/newBgImg.png";
 import VanImg from "../images/sa-van-img.avif";
 import Phone24Hour from "../assets/24-hours.svg";
 import WhyChooseUse from "../components/whyChooseUs";
@@ -25,7 +25,7 @@ const Homepage = () => {
       </a>
       <Nav />
       <div
-        className="py-36 flex flex-col justify-center items-start relative lg:bg-fixed font-semibold"
+        className="py-36 flex flex-col justify-center items-start relative md:bg-fixed font-semibold"
         style={{
           backgroundImage: `url(${BackgroundImg})`,
           backgroundRepeat: "no-repeat",
