@@ -8,7 +8,7 @@ import IconSection from "../components/IconSection";
 import WaterHeater from "../assets/waterHeater.svg";
 import Pipe from "../assets/pipe1.svg";
 import BackgroundImg from "../images/newBgImg.png";
-import VanImg from "../images/sa-van-img.avif";
+import VanImg from "../images/sa-plumbing-van-updated.png";
 import Phone24Hour from "../assets/24-hours.svg";
 import WhyChooseUse from "../components/whyChooseUs";
 import OurWork from "../components/OurWork";
@@ -132,24 +132,24 @@ const Homepage = () => {
           </button>
         </a>
       </div>
-      <div className="py-20 flex justify-center items-center flex-col lg:flex-row">
+      <div className="py-20 flex justify-center items-center flex-col md:flex-row">
         <div className=" flex flex-col justify-end items-end">
-          <div className=" relative flex justify-end border ">
-            <img src={VanImg} alt="" className=" h-96" />
+          <div className=" relative flex justify-end ">
+            <img src={VanImg} alt="" className=" h-1/2" />
 
-            <div className="flex flex-col items-center justify-center w-52 h-40 bg-orange-500 absolute bottom-64">
+            {/* <div className="flex flex-col items-center justify-center w-52 h-40 bg-orange-500 absolute bottom-64">
               <span className="text-white text-5xl font-semibold">15+</span>
               <span className="text-white text-lg pt-5">
                 Years of Experience
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="text-center text-blue-900 flex flex-col items-center md:items-start px-10 py-5">
+        <div className="text-center text-blue-900 flex flex-col items-center md:items-start pr-10 py-5">
           <div className=" text-xl font-medium pb-5 text-orange-500">
             Why Choose Us?
           </div>
-          <div className=" text-5xl font-semibold">
+          <div className="md:text-left text-5xl font-semibold">
             Focused on getting the job done!
           </div>
           <p className="md:text-left py-5 text-gray-600">
