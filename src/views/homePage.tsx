@@ -135,17 +135,10 @@ const Homepage = () => {
       <div className="py-20 flex justify-center items-center flex-col md:flex-row">
         <div className=" flex flex-col justify-end items-end">
           <div className=" relative flex justify-end ">
-            <img src={VanImg} alt="" className=" h-1/2" />
-
-            {/* <div className="flex flex-col items-center justify-center w-52 h-40 bg-orange-500 absolute bottom-64">
-              <span className="text-white text-5xl font-semibold">15+</span>
-              <span className="text-white text-lg pt-5">
-                Years of Experience
-              </span>
-            </div> */}
+            <img src={VanImg} alt="best plumber in santa cruz" />
           </div>
         </div>
-        <div className="text-center text-blue-900 flex flex-col items-center md:items-start pr-10 py-5">
+        <div className="text-center text-blue-900 flex flex-col items-center md:items-start md:pl-0 px-10 py-5">
           <div className=" text-xl font-medium pb-5 text-orange-500">
             Why Choose Us?
           </div>
